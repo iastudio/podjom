@@ -62,7 +62,7 @@
         $slider.find('ul.slider__container').animate({
             left: - slideWidth
         }, sliderSpeed, function () {
-            var active = parseInt($slider.find('ul.slider__container li.slider__item:eq(2)').attr('data-index'));
+            var active = parseInt($slider.find('ul.slider__container li.slider__item:eq(0)').attr('data-index'));
             $slider.find('.slider__dot').eq(active).addClass('active');
             $slider.find('ul.slider__container li.slider__item:first-child').appendTo($slider.find('ul.slider__container')).addClass('active');
             $slider.find('ul.slider__container').css('left', '');
